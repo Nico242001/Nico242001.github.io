@@ -31,5 +31,5 @@ function confirmerReservation(){
     var expert = document.getElementById("expert-reservation");
     var service = document.getElementById("service-reservation");
     date = date.value;
-    console.log(value);
+    console.log(date);
 }
