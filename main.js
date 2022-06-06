@@ -9,7 +9,7 @@ function expert(expert){
     var url = "https://nico242001.github.io/reservation?expert=";
     var url = url.concat(expert);
     console.log(url);
-    window.location.replace(url);
+    window.location.replace(url); 
 }
 
 function reservation(){
@@ -23,4 +23,13 @@ function reservation(){
         var paramValue = params.get("expert");
         elem.value = paramValue;
     }
+}
+
+function confirmerReservation(){
+    var date = document.getElementById("date-reservation");
+    var heure = document.getElementById("heure-reservation");
+    var expert = document.getElementById("expert-reservation");
+    var service = document.getElementById("service-reservation");
+    date = date.value;
+    console.log(value);
 }
