@@ -26,7 +26,7 @@ function reservation(){
 }
 
 function confirmerReservation(){
-    var date = document.getElementById("date-reservation").value;
+    var date = document.getElementById("date-reservation");
     var heure = document.getElementById("heure-reservation").value;
     var expert = document.getElementById("expert-reservation").value;
     var service = document.getElementById("service-reservation").value;
