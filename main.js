@@ -15,12 +15,12 @@ function expert(expert){
 function reservation(){
     const params = new URLSearchParams(window.location.search)
     if(params.has("service")){
-        console.log("service");
-    }
-    if(params.has("expert")){
-        console.log("expert");
+        var elem = document.getElementById("service-reservation");
+        var paramValue = params.get("service");
+        elem.value = paramValue;
+    }else if(params.has("expert")){
+        var elem = document.getElementById("expert-reservation");
+        var paramValue = params.get("expert");
+        elem.value = paramValue;
     }
 }
-
-// var elem = document.getElementById("service-reservation");
-// elem.value = "brushing";
