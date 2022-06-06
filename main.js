@@ -9,7 +9,7 @@ function expert(expert){
     var url = "https://nico242001.github.io/reservation?expert=";
     var url = url.concat(service);
     console.log(url);
-    window.location.replace(url);
+    // window.location.replace(url);
 }
 
 function reservation(){
