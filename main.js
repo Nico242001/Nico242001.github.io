@@ -13,10 +13,11 @@ function expert(expert){
 }
 
 function reservation(){
-    if(URLSearchParams.has("service")){
+    const params = new URLSearchParams(window.location.search)
+    if(params.has("service")){
         console.log("service");
     }
-    if(URLSearchParams.has("expert")){
+    if(params.has("expert")){
         console.log("expert");
     }
 }
