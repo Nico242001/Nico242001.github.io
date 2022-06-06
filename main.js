@@ -1,13 +1,13 @@
 function service(service){
     var url = "https://nico242001.github.io/reservation?service=";
-    var url = url.concat(service);
+    url = url.concat(service);
     console.log(url);
     window.location.replace(url);
 }
 
 function expert(expert){
     var url = "https://nico242001.github.io/reservation?expert=";
-    var url = url.concat(expert);
+    url = url.concat(expert);
     console.log(url);
     window.location.replace(url); 
 }
@@ -30,6 +30,6 @@ function confirmerReservation(){
     var heure = document.getElementById("heure-reservation").value;
     var expert = document.getElementById("expert-reservation").value;
     var service = document.getElementById("service-reservation").value;
-    // date = date.value;
-    console.log(date);
+    var url = "https://nico242001.github.io/confirmation?date=";
+    url = url.concat(date, "&heure=",heure, "&expert=", expert, "&service=", service);
 }
