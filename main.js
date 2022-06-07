@@ -50,6 +50,7 @@ function confirmationLoad(){
 function confirmationPopUp(){
     Swal.fire({
         title:"Votre rendez-vous a été cédulé.",
-        background: "green",
+        titleColor: "black",
+        background: "green"
     });
  }
