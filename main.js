@@ -23,7 +23,7 @@ function reservation(){
         var paramValue = params.get("expert");
         elem.value = paramValue;
     }
-    document.getElementById("date-reservation").datepicker({
+    $("#date-reservation").datepicker({
         daysOfWeekDisabled : [0,6]
     });
 }
