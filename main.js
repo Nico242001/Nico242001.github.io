@@ -13,7 +13,7 @@ function expert(expert){
 }
 
 function reservation(){
-    const params = new URLSearchParams(window.location.search)
+    const params = new URLSearchParams(window.location.search);
     if(params.has("service")){
         var elem = document.getElementById("service-reservation");
         var paramValue = params.get("service");
@@ -32,4 +32,17 @@ function confirmerReservation(){
     var service = document.getElementById("service-reservation").value;
     var url = "https://nico242001.github.io/confirmation?date=";
     url = url.concat(date, "&heure=",heure, "&expert=", expert, "&service=", service);
+    window.location.replace(url);
+}
+
+function confirmationLoad(){
+    const params = new URLSearchParams(window.location.search);
+    var date = params.get("date");
+    var heure = params.get("heure");
+    var expert = params.get("expert");
+    var service = params.get("service");
+    document.getElementById("date").innerHTML = date;
+    document.getElementById("heure").innerHTML = heure;
+    document.getElementById("expert").innerHTML = expert;
+    document.getElementById("service").innerHTML = service;
 }
