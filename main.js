@@ -46,3 +46,10 @@ function confirmationLoad(){
     document.getElementById("expert").innerHTML = expert;
     document.getElementById("service").innerHTML = service;
 }
+
+function confirmationPopUp(){
+    Swal.fire({
+        title:"Votre rendez-vous a été cédulé.",
+        background: green,
+    });
+ }
