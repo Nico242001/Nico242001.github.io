@@ -23,9 +23,6 @@ function reservation(){
         var paramValue = params.get("expert");
         elem.value = paramValue;
     }
-    $("#date-reservation").datepicker({
-        daysOfWeekDisabled : [0,6]
-    });
 }
 
 function confirmerReservation(){
