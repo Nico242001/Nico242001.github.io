@@ -47,7 +47,7 @@ function confirmationLoad(){
     document.getElementById("service").innerHTML = service;
 }
 
-function confirmationPopUp(){
+function confirmatioPopUp(){
     Swal.fire({
         title:"Votre rendez-vous a été cédulé.",
         background: green,
