@@ -71,7 +71,7 @@ function correctHeader(){
     } else{
         const elem = document.getElementById("headerMD");
         if(!(elem == null)){
-            elem.remove();S
+            elem.remove();
         }
     }
 }
