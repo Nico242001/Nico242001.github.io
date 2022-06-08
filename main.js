@@ -59,19 +59,41 @@ function confirmationPopUp(){
  }
 
  window.addEventListener('resize', function(event){
-    window.location.replace(window.location.href);
+    correctHeader();
 });
 
 function correctHeader(){
-    if(window.innerWidth<769){
-        const elem = document.getElementById("headerLG");
-        if(!(elem == null)){
-            elem.remove();
-        }
+    if(window.innerWidth<850){
+        const elemLG = document.getElementById("headerLG");
+        elemLG.innerHTML=""
+        const elemMD = document.getElementById("headerMD");
+        elemMD.innerHTML = "<nav class='navbar navbar-expand-md navbar-light border-bottom border-5 border-dark' style='background-color: lightblue;''>"+
+        "<div class='container-fluid text-center'>"+"<a href='#' class='navbar-brand'>"+"<h1 class='text-center my-0 py-0'>Coiffeur d'Ottawa</h1></a>"+
+        "<button type='button' class='navbar-toggler' data-bs-toggle='collapse' data-bs-target='#navbarCollapse'>"+
+        "<span class='navbar-toggler-icon'></span></button>"+
+        "<div class='collapse navbar-collapse  justify-content-end' id='navbarCollapse'>"+
+        "<div class='navbar-nav'>"+"<li class='nav-item'>"+"<a class='nav-link text-black' href='https://Nico242001.github.io'>A propos</a></li>"
+        +"<li class='nav-item'>"+"<li class='nav-item'><a class='nav-link text-black' href='https://Nico242001.github.io/reservation'>Résérvation</a></li>"
+        +"<li class='nav-item'>"+"<li class='nav-item'><a class='nav-link text-black' href='https://Nico242001.github.io/services'>Services</a></li>"
+        +"<li class='nav-item'>"+"<li class='nav-item'><a class='nav-link text-black' href='https://Nico242001.github.io/experts'>Nos Experts</a></li>"
+        +"<li class='nav-item'>"+"<li class='nav-item'><a class='nav-link text-black' href='https://Nico242001.github.io/contact'>Contact</a></li>"+
+        "</div>"+"</div>"+"</div>"+"</nav>";
+     
     } else{
-        const elem = document.getElementById("headerMD");
-        if(!(elem == null)){
-            elem.remove();
-        }
+        const elemMD = document.getElementById("headerMD");
+        elemMD.innerHTML = "";
+        const elemLG = document.getElementById("headerLG");
+        elemLG.innerHTML="<div class='container-fluid my-0 py-0' style='background-color: lightblue;'>"+
+        "<h1 class='text-center my-0 py-0'>Coiffeur d'Ottawa</h1>"+
+        "</div>"+
+"<nav class='navbar navbar-expand-sm justify-content-center border-top border-bottom border-5 border-dark' style='background-color: lightblue; border-color: black;'>"+
+"<ul class='navbar-nav nav-fill w-50'>"+
+"<li class='nav-item'>"+"<a class='nav-link text-black' href='https://Nico242001.github.io'>A propos</a>"+
+" </li>"+"<li class='nav-item'>"+"<a class='nav-link text-black' href='https://Nico242001.github.io/reservation'>Résérvation</a>"+
+"</li>"+"<li class='nav-item'>"+"<a class='nav-link text-black' href='https://Nico242001.github.io/services'>Services</a>"+
+"</li>"+"<li class='nav-item'>"+" <a class='nav-link text-black' href='https://Nico242001.github.io/experts'>Nos Experts</a>"+
+"</li>"+"<li class='nav-item'>"+"<a class='nav-link text-black' href='https://Nico242001.github.io/contact'>Contact</a>"+
+"</li>"+"</ul>"+"</nav";
+        
     }
 }
