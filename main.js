@@ -59,7 +59,7 @@ function confirmationPopUp(){
  }
 
  window.addEventListener('resize', function(event){
-     this.location.reload;
+     window.location.reload;
 });
 
 function correctHeader(){
@@ -71,7 +71,7 @@ function correctHeader(){
     } else{
         const elem = document.getElementById("headerMD");
         if(!(elem == null)){
-            elem.remove();
+            elem.remove();S
         }
     }
 }
