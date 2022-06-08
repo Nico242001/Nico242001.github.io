@@ -58,9 +58,13 @@ function confirmationPopUp(){
  window.addEventListener('resize', function(event){
     if(window.innerWidth<769){
         const elem = document.getElementById("headerLG");
-        elem.remove();
+        if(!(elem == null)){
+            elem.remove();
+        }
     } else{
         const elem = document.getElementById("headerMD");
-        elem.remove();
+        if(!(elem == null)){
+            elem.remove();
+        }
     }
 });
