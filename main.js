@@ -84,8 +84,7 @@ function correctHeader(){
         elemMD.innerHTML = "";
         const elemLG = document.getElementById("headerLG");
         elemLG.innerHTML="<div class='container-fluid my-0 py-0' style='background-color: lightblue;'>"+
-        +
-        "<h1 class='text-center my-0 py-0'>"+"<img src='logo.jpg' alt='Flowers in Chania'>Coiffeur d'Ottawa</h1>"+
+        +"<h1 class='text-center my-0 py-0'>Coiffeur d'Ottawa</h1>"+
         "</div>"+
 "<nav class='navbar navbar-expand-sm justify-content-center border-top border-bottom border-5 border-dark' style='background-color: lightblue; border-color: black;'>"+
 "<ul class='navbar-nav nav-fill w-50'>"+
