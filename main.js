@@ -13,6 +13,7 @@ function expert(expert){
 }
 
 function reservation(){
+    correctHeader();
     const params = new URLSearchParams(window.location.search);
     if(params.has("service")){
         var elem = document.getElementById("service-reservation");
@@ -26,6 +27,7 @@ function reservation(){
 }
 
 function confirmerReservation(){
+    
     var date = document.getElementById("date-reservation").value;
     var heure = document.getElementById("heure-reservation").value;
     var expert = document.getElementById("expert-reservation").value;
@@ -36,6 +38,7 @@ function confirmerReservation(){
 }
 
 function confirmationLoad(){
+    correctHeader();
     const params = new URLSearchParams(window.location.search);
     var date = params.get("date");
     var heure = params.get("heure");
@@ -56,6 +59,10 @@ function confirmationPopUp(){
  }
 
  window.addEventListener('resize', function(event){
+     this.location.reload;
+});
+
+function correctHeader(){
     if(window.innerWidth<769){
         const elem = document.getElementById("headerLG");
         if(!(elem == null)){
@@ -67,4 +74,4 @@ function confirmationPopUp(){
             elem.remove();
         }
     }
-});
+}
