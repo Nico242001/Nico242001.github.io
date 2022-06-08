@@ -54,3 +54,13 @@ function confirmationPopUp(){
         background: "green"
     });
  }
+
+ window.addEventListener('resize', function(event){
+    if(window.innerWidth<769){
+        const elem = document.getElementById("headerLG");
+        elem.remove();
+    } else{
+        const elem = document.getElementById("headerMD");
+        elem.remove();
+    }
+});

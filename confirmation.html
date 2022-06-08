@@ -9,33 +9,60 @@
         <script src="main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
         <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+          .swal2-title {
+            color: black;
+          }
+        </style>
     </head>
     <body onload="confirmationLoad()" style=" background-image: url('https://static.vecteezy.com/system/resources/previews/004/696/224/non_2x/barbershrp-set-seamless-background-mens-haircut-tools-free-vector.jpg');
     width: 100%;"> 
-      <div class="container-fluid my-0 py-0" style="background-color: lightblue;">
-          <h1 class="text-center my-0 py-0">Coiffeur d'Ottawa</h1>
-      </div> 
-
-        <nav class="navbar navbar-expand-sm justify-content-center border-top border-bottom border-5 border-dark" style="background-color: lightblue; border-color: black;">
-          <ul class="navbar-nav nav-fill w-50">
-            <li class="nav-item">
-              <a class="nav-link text-black" href="https://Nico242001.github.io">A propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="https://Nico242001.github.io/reservation">Résérvation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="https://Nico242001.github.io/services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="https://Nico242001.github.io/experts">Nos Experts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="https://Nico242001.github.io/contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
+  
+  <div id="headerLG">
+    <div class="container-fluid my-0 py-0" style="background-color: lightblue;">
+      <h1 class="text-center my-0 py-0">Coiffeur d'Ottawa</h1>
+  </div> 
+  
+    <nav class="navbar navbar-expand-sm justify-content-center border-top border-bottom border-5 border-dark" style="background-color: lightblue; border-color: black;">
+      <ul class="navbar-nav nav-fill w-50">
+        <li class="nav-item">
+          <a class="nav-link text-black" href="https://Nico242001.github.io">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="https://Nico242001.github.io/reservation">Résérvation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="https://Nico242001.github.io/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="https://Nico242001.github.io/experts">Nos Experts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="https://Nico242001.github.io/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+      <div id="headerMD">
+        <nav class="navbar navbar-expand-md navbar-light border-bottom border-5 border-dark" style="background-color: lightblue;">
+          <div class="container-fluid text-center">
+              <a href="#" class="navbar-brand"><h1 class="text-center my-0 py-0">Coiffeur d'Ottawa</h1></a>
+              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse  justify-content-end" id="navbarCollapse">
+                  <div class="navbar-nav">
+                      <li class="nav-item"><a class="nav-link text-black" href="https://Nico242001.github.io">A propos</a></li>
+                      <li class="nav-item"><a class="nav-link text-black" href="https://Nico242001.github.io/reservation">Résérvation</a></li>
+                      <li class="nav-item"><a class="nav-link text-black" href="https://Nico242001.github.io/services">Services</a></li>
+                      <li class="nav-item"><a class="nav-link text-black" href="https://Nico242001.github.io/experts">Nos Experts</a></li>
+                      <li class="nav-item"><a class="nav-link text-black" href="https://Nico242001.github.io/contact">Contact</a></li>
+                  </div>
+                </div>
+          </div>
+      </nav>
+      </div>
         <h1 class="text-center px-2 mx-auto mt-2 border border-5 border-dark" style="background-color: lightblue; max-width: fit-content">Confirmer votre rendez-vous</h1>
 
         <div class="container-fluid text-left">
