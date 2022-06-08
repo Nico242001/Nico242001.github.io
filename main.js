@@ -59,7 +59,7 @@ function confirmationPopUp(){
  }
 
  window.addEventListener('resize', function(event){
-     window.location.reload;
+    window.location.replace(window.location.href);
 });
 
 function correctHeader(){
