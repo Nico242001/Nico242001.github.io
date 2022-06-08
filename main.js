@@ -84,7 +84,7 @@ function correctHeader(){
         elemMD.innerHTML = "";
         const elemLG = document.getElementById("headerLG");
         elemLG.innerHTML="<div class='container-fluid my-0 py-0' style='background-color: lightblue;'>"+
-        +"<h1 class='text-center my-0 py-0'>Coiffeur d'Ottawa</h1>"+
+        "<h1 class='text-center my-0 py-0'>Coiffeur d'Ottawa</h1>"+
         "</div>"+
 "<nav class='navbar navbar-expand-sm justify-content-center border-top border-bottom border-5 border-dark' style='background-color: lightblue; border-color: black;'>"+
 "<ul class='navbar-nav nav-fill w-50'>"+
@@ -94,6 +94,7 @@ function correctHeader(){
 "</li>"+"<li class='nav-item'>"+" <a class='nav-link text-black' href='https://Nico242001.github.io/experts'>Nos Experts</a>"+
 "</li>"+"<li class='nav-item'>"+"<a class='nav-link text-black' href='https://Nico242001.github.io/contact'>Contact</a>"+
 "</li>"+"</ul>"+"</nav";
+
         
     }
 }
