@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Coiffeur d'Ottawa</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/bootstrap.min.css" rel="stylesheet"/>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="main.js"></script>
-    </head>
-    <body onload="correctHeader()" style=" background-image: url('https://static.vecteezy.com/system/resources/previews/004/696/224/non_2x/barbershrp-set-seamless-background-mens-haircut-tools-free-vector.jpg');
-    width: 100%;"> 
-      <div id="headerLG">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Coiffeur d'Ottawa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body onload="correctHeader()" style=" background-image: url('https://static.vecteezy.com/system/resources/previews/004/696/224/non_2x/barbershrp-set-seamless-background-mens-haircut-tools-free-vector.jpg');
+    width: 100%;">
+  <div id="headerLG">
+  </div>
+  <div id="headerMD">
+  </div>
+
+  <div class="container-fluid pt-4">
+    <h2 class="text-center px-2 mx-auto border border-5 border-dark"
+      style="background-color:lightblue; max-width: fit-content;">Nos Experts</h2>
+  </div>
+
+
+  <div class="container-fluid text-center">
+    <div class="row mx-auto" style="max-width: fit-content;">
+      <div class="col mx-auto p-3" style="max-width: fit-content;">
+        <div class="card mx-auto border border-5 border-dark" style="background-color:lightblue;width:300px;">
+          <img class="card-img-bottom" src="Avatar.png" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <div class="card-header text-center" style="font-weight:800; background-color: lightblue;">David Wallace
+            </div>
+            <div class="card-footer text-center" style="background-color: lightblue;">Coiffeur</div>
+          </div>
+          <button class="btn btn-secondary mx-auto mb-2" onclick="expert('David Wallace')">Rendez-Vous</button>
+        </div>
       </div>
-          <div id="headerMD">
+      <div class="col mx-auto p-3" style="max-width: fit-content;">
+        <div class="card mx-auto border border-5 border-dark" style="background-color:lightblue;width:300px;">
+          <img class="card-img-bottom" src="Avatar.png" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <div class="card-header text-center" style="font-weight:800; background-color: lightblue;">Frederic Garcia
+            </div>
+            <div class="card-footer text-center" style="background-color: lightblue;">Coiffeur</div>
           </div>
-
-        <div class="container-fluid pt-4">
-          <h2 class="text-center px-2 mx-auto border border-5 border-dark" style="background-color:lightblue; max-width: fit-content;">Nos Experts</h2>
+          <button class="btn btn-secondary mx-auto mb-2" onclick="expert('Frederic Garcia')">Rendez-Vous</button>
         </div>
+      </div>
+    </div>
 
+    <div class="row mx-auto" style="max-width: fit-content;">
 
-        <div class="container-fluid text-center">
-          <div class="row mx-auto" style="max-width: fit-content;">
-            <div class="col mx-auto p-3" style="max-width: fit-content;">
-              <div class="card mx-auto border border-5 border-dark" style="background-color:lightblue;width:300px;">  
-                <img class="card-img-bottom" src="Avatar.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <div class="card-header text-center" style="font-weight:800; background-color: lightblue;">David Wallace</div>
-                  <div class="card-footer text-center" style="background-color: lightblue;">Coiffeur</div>
-                </div>
-                <button class="btn btn-secondary mx-auto mb-2" onclick="expert('David Wallace')">Rendez-Vous</button>
-              </div>
+      <div class="col mx-auto p-3" style="max-width: fit-content;">
+        <div class="card mx-auto border border-5 border-dark" style="background-color:lightblue;width:300px;">
+          <img class="card-img-bottom" src="Avatar.png" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <div class="card-header text-center" style="font-weight:800; background-color: lightblue;">Natalie Williams
             </div>
-            <div class="col mx-auto p-3" style="max-width: fit-content;">
-              <div class="card mx-auto border border-5 border-dark" style="background-color:lightblue;width:300px;">  
-                <img class="card-img-bottom" src="Avatar.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <div class="card-header text-center" style="font-weight:800; background-color: lightblue;">Frederic Garcia</div>
-                  <div class="card-footer text-center" style="background-color: lightblue;">Coiffeur</div>
-                </div>
-                <button class="btn btn-secondary mx-auto mb-2" onclick="expert('Frederic Garcia')">Rendez-Vous</button>
-              </div>
-            </div>
+            <div class="card-footer text-center" style="background-color: lightblue;">Esthéticienne</div>
           </div>
-
-          <div class="row mx-auto" style="max-width: fit-content;">
-            
-            <div class="col mx-auto p-3" style="max-width: fit-content;">
-              <div class="card mx-auto border border-5 border-dark" style="background-color:lightblue;width:300px;">  
-                <img class="card-img-bottom" src="Avatar.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <div class="card-header text-center" style="font-weight:800; background-color: lightblue;">Natalie Williams</div>
-                  <div class="card-footer text-center" style="background-color: lightblue;">Esthéticienne</div>
-                </div>
-                <button class="btn btn-secondary mx-auto mb-2" onclick="expert('Natalie Williams')">Rendez-Vous</button>
-              </div>
-            </div>
-            <div class="col mx-auto p-3" style="max-width: fit-content;">
-              <div class="card mx-auto border border-5 border-dark" style="background-color:lightblue;width:300px;">  
-                <img class="card-img-bottom" src="Avatar.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <div class="card-header text-center" style="font-weight:800; background-color: lightblue;">Julie Smith</div>
-                  <div class="card-footer text-center" style="background-color: lightblue;">Coiffeuse</div>
-                </div>
-                <button class="btn btn-secondary mx-auto mb-2" onclick="expert('Julie Smith')">Rendez-Vous</button>
-              </div>
-            </div>    
-          </div>
+          <button class="btn btn-secondary mx-auto mb-2" onclick="expert('Natalie Williams')">Rendez-Vous</button>
         </div>
-    </body>
+      </div>
+      <div class="col mx-auto p-3" style="max-width: fit-content;">
+        <div class="card mx-auto border border-5 border-dark" style="background-color:lightblue;width:300px;">
+          <img class="card-img-bottom" src="Avatar.png" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <div class="card-header text-center" style="font-weight:800; background-color: lightblue;">Julie Smith</div>
+            <div class="card-footer text-center" style="background-color: lightblue;">Coiffeuse</div>
+          </div>
+          <button class="btn btn-secondary mx-auto mb-2" onclick="expert('Julie Smith')">Rendez-Vous</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

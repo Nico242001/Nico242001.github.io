@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Coiffeur d'Ottawa</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/bootstrap.min.css" rel="stylesheet"/>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="main.js"></script>
-    </head>
-    <body onload="correctHeader()" style=" background-image: url('https://static.vecteezy.com/system/resources/previews/004/696/224/non_2x/barbershrp-set-seamless-background-mens-haircut-tools-free-vector.jpg');
-    width: 100%;"> 
-      <div id="headerLG">
-      </div>
-          <div id="headerMD">
-          </div>
 
-        <div class="container-fluid pt-4">
-          <h2 class="text-center px-2 mx-auto border border-5 border-dark" style="background-color:lightblue; max-width: fit-content;">Services</h2>
+<head>
+  <meta charset="UTF-8">
+  <title>Coiffeur d'Ottawa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body onload="correctHeader()" style=" background-image: url('https://static.vecteezy.com/system/resources/previews/004/696/224/non_2x/barbershrp-set-seamless-background-mens-haircut-tools-free-vector.jpg');
+    width: 100%;">
+  <div id="headerLG">
+  </div>
+  <div id="headerMD">
+  </div>
+
+  <div class="container-fluid pt-4">
+    <h2 class="text-center px-2 mx-auto border border-5 border-dark"
+      style="background-color:lightblue; max-width: fit-content;">Services</h2>
+  </div>
+
+
+  <div class="container-fluid text-center">
+    <div class="row mx-auto" style="max-width: fit-content;">
+      <div class="col mx-auto p-3" style="max-width: fit-content;">
+        <div class="card mx-auto border border-5 border-dark"
+          style="width: 300px; height:215px; background-color: lightblue;">
+          <div class="card-body">
+            <div class="card-header text-center" style="font-weight:800; background-color: lightblue;">Coupe de cheveux
+            </div>
+            <div class="card-footer text-center" style="background-color: lightblue;">La meilleure coupe de cheveux pour
+              40$.</div>
+          </div>
+          <button class="btn btn-secondary mx-auto mb-2" onclick="service('Coupe de cheveux')">Rendez-Vous</button>
         </div>
-
-
-        <div class="container-fluid text-center">
-          <div class="row mx-auto" style="max-width: fit-content;">
-            <div class="col mx-auto p-3" style="max-width: fit-content;">
-              <div class="card mx-auto border border-5 border-dark" style="width: 300px; height:215px; background-color: lightblue;">  
-                <div class="card-body">
-                  <div class="card-header text-center" style="font-weight:800; background-color: lightblue;">Coupe de cheveux</div>
-                  <div class="card-footer text-center" style="background-color: lightblue;">La meilleure coupe de cheveux pour 40$.</div>
-                </div>
-                <button class="btn btn-secondary mx-auto mb-2" onclick="service('Coupe de cheveux')">Rendez-Vous</button>
-              </div>
-            </div>
-            <div class="col mx-auto p-3" style="max-width: fit-content;">
-              <div class="card mx-auto border border-5 border-dark" style="width:300px; height:215px; background-color: lightblue;">  
-                <div class="card-body">
-                  <div class="card-header text-center" style="font-weight:800;background-color: lightblue;">Teinture de cheveux</div>
-                  <div class="card-footer text-center" style="background-color: lightblue;">Teinture de cheveux de la couleur de votre choix pour 35$.</div>
-                </div>
-                <button class="btn btn-secondary mx-auto mb-2" onclick="service('Teinture de cheveux')">Rendez-Vous</button>
-              </div>
-            </div>
+      </div>
+      <div class="col mx-auto p-3" style="max-width: fit-content;">
+        <div class="card mx-auto border border-5 border-dark"
+          style="width:300px; height:215px; background-color: lightblue;">
+          <div class="card-body">
+            <div class="card-header text-center" style="font-weight:800;background-color: lightblue;">Teinture de
+              cheveux</div>
+            <div class="card-footer text-center" style="background-color: lightblue;">Teinture de cheveux de la couleur
+              de votre choix pour 35$.</div>
           </div>
+          <button class="btn btn-secondary mx-auto mb-2" onclick="service('Teinture de cheveux')">Rendez-Vous</button>
+        </div>
+      </div>
+    </div>
 
-          <div class="row mx-auto" style="max-width: fit-content;">
-            
-            <div class="col mx-auto p-3" style="max-width: fit-content;">
-              <div class="card mx-auto border border-5 border-dark" style="width:300px; height:215px; background-color: lightblue;">  
-                <div class="card-body">
-                  <div class="card-header text-center" style="font-weight:800;background-color: lightblue;">Manicure</div>
-                  <div class="card-footer text-center" style="background-color: lightblue;">Manicure de haute qualité pour 50$.</div>
-                </div>
-                <button class="btn btn-secondary mx-auto mb-2" onclick="service('Manicure')">Rendez-Vous</button>
-              </div>
-            </div>
-            <div class="col mx-auto p-3" style="max-width: fit-content;">
-              <div class="card mx-auto border border-5 border-dark" style="width:300px; height:215px; background-color: lightblue;">  
-                <div class="card-body">
-                  <div class="card-header text-center" style="font-weight:800;background-color: lightblue;">Brushing</div>
-                  <div class="card-footer text-center" style="background-color: lightblue;">Brushing pour avoir les meilleure cheveux pour 30$.</div>
-                </div>
-                <button class="btn btn-secondary mx-auto mb-2" onclick="service('Brushing')">Rendez-Vous</button>
-              </div>
-            </div>    
+    <div class="row mx-auto" style="max-width: fit-content;">
+
+      <div class="col mx-auto p-3" style="max-width: fit-content;">
+        <div class="card mx-auto border border-5 border-dark"
+          style="width:300px; height:215px; background-color: lightblue;">
+          <div class="card-body">
+            <div class="card-header text-center" style="font-weight:800;background-color: lightblue;">Manicure</div>
+            <div class="card-footer text-center" style="background-color: lightblue;">Manicure de haute qualité pour
+              50$.</div>
           </div>
-       
-    </body>
+          <button class="btn btn-secondary mx-auto mb-2" onclick="service('Manicure')">Rendez-Vous</button>
+        </div>
+      </div>
+      <div class="col mx-auto p-3" style="max-width: fit-content;">
+        <div class="card mx-auto border border-5 border-dark"
+          style="width:300px; height:215px; background-color: lightblue;">
+          <div class="card-body">
+            <div class="card-header text-center" style="font-weight:800;background-color: lightblue;">Brushing</div>
+            <div class="card-footer text-center" style="background-color: lightblue;">Brushing pour avoir les meilleure
+              cheveux pour 30$.</div>
+          </div>
+          <button class="btn btn-secondary mx-auto mb-2" onclick="service('Brushing')">Rendez-Vous</button>
+        </div>
+      </div>
+    </div>
+
+</body>
+
 </html>
