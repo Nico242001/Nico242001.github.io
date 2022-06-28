@@ -11,7 +11,7 @@ function onload() {
     if(equipement == "shinGuards"){
         equipement = "shin guards"
     }
-    var equipementLink = link.concat("items/?sport=",sport,"&equipement=",equipement);
+    var equipementLink = link.concat("items?sport=",sport,"&equipement=",equipement);
     document.getElementById("sportLink").innerHTML = sport;
     document.getElementById("sportLink").href = link.concat(sport);
     document.getElementById("equipementLink").innerHTML = equipement;
