@@ -63,7 +63,7 @@ function filters(){
 function cards(){
 
     for (let i = 0; i <20 ; i++){
-        document.getElementById("itemContainer").innerHTML += "<div class='card' style='width:200px'><img class='card-img-top' src='placeHolder.jpg' alt='Card image'><div class='card-body'><h4 class='card-title'>John Doe</h4><p class='card-text'>Some example text.</p><a href='#' class='btn btn-primary'>See Profile</a></div></div>"
+        document.getElementById("itemContainer").innerHTML += "<div class='col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12'><div class='card' style='width:200px'><img class='card-img-top' src='placeHolder.jpg' alt='Card image'><div class='card-body'><h4 class='card-title'>John Doe</h4><p class='card-text'>Some example text.</p><a href='#' class='btn btn-primary'>See Profile</a></div></div></div>"
     }
 
 
