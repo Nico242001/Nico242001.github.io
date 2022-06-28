@@ -32,10 +32,28 @@ function filters(){
             document.getElementById("filterContainer").innerHTML += "<h4>Size</h4><input type='checkbox' id='S' name='S' value='S'><label for='S'> Small</label><br><input type='checkbox' id='M' name='M' value='M'><label for='M'> Medium</label><br><input type='checkbox' id='L' name='L' value='L'><label for='L'> Large</label>"
         }        
     }
-    if(sport == "hockey"){
-
+    else if(sport == "hockey"){
+        document.getElementById("filterContainer").innerHTML += "<h4>Brand</h4><input type='checkbox' id='ccm' name='ccm' value='ccm'><label for='ccm'> CCM</label><br><input type='checkbox' id='bauer' name='bauer' value='bauer'><label for='bauer'> Bauer</label><br><input type='checkbox' id='warrior' name='warrior' value='warrior'><label for='warrior'> Warrior</label><br>"
+        if(equipement == "skates"){
+            document.getElementById("filterContainer").innerHTML += "<h4>Size</h4><input type='checkbox' id='6' name='6' value='6'><label for='6'> 6</label><br><input type='checkbox' id='7' name='7' value='7'><label for='7'> 7</label><br><input type='checkbox' id='8' name='8' value='8'><label for='8'> 8</label><br><input type='checkbox' id='9' name='9' value='9'><label for='9'> 9</label><br><input type='checkbox' id='10' name='10' value='10'><label for='10'> 10</label><br><input type='checkbox' id='11' name='11' value='11'><label for='11'> 11</label><br><input type='checkbox' id='12' name='12' value='12'><label for='12'> 12</label><br>"
+        }
+        if(equipement == "sticks" || equipement == "helmets"){
+            document.getElementById("filterContainer").innerHTML += "<h4>Size</h4><input type='checkbox' id='S' name='S' value='S'><label for='S'> Small</label><br><input type='checkbox' id='M' name='M' value='M'><label for='M'> Medium</label><br><input type='checkbox' id='L' name='L' value='L'><label for='L'> Large</label>"
+        }    
     }
-    if(sport == "basketball"){
-
+    else {
+        
+        if(equipement == "shoes"){
+            document.getElementById("filterContainer").innerHTML += "<h4>Brand</h4><input type='checkbox' id='nike' name='nike' value='nike'><label for='nike'> Nike</label><br><input type='checkbox' id='adidas' name='adidas' value='adidas'><label for='adidas'> Adidas</label><br><input type='checkbox' id='puma' name='puma' value='puma'><label for='puma'> Puma</label><br>"
+            document.getElementById("filterContainer").innerHTML += "<h4>Size</h4><input type='checkbox' id='6' name='6' value='6'><label for='6'> 6</label><br><input type='checkbox' id='7' name='7' value='7'><label for='7'> 7</label><br><input type='checkbox' id='8' name='8' value='8'><label for='8'> 8</label><br><input type='checkbox' id='9' name='9' value='9'><label for='9'> 9</label><br><input type='checkbox' id='10' name='10' value='10'><label for='10'> 10</label><br><input type='checkbox' id='11' name='11' value='11'><label for='11'> 11</label><br><input type='checkbox' id='12' name='12' value='12'><label for='12'> 12</label><br>"
+        }
+        if(equipement == "balls"){
+            document.getElementById("filterContainer").innerHTML += "<h4>Brand</h4><input type='checkbox' id='nike' name='nike' value='nike'><label for='nike'> Nike</label><br><input type='checkbox' id='spalding' name='spalding' value='spalding'><label for='spalding'> Spalding</label><br><input type='checkbox' id='wilson' name='wilson' value='wilson'><label for='wilson'> Wilson</label><br>"
+            document.getElementById("filterContainer").innerHTML += "<h4>Size</h4><input type='checkbox' id='27.5' name='27.5' value='27.5'><label for='27.5'> 27.5</label><br><input type='checkbox' id='28.5' name='28.5' value='28.5'><label for='28.5'> 28.5</label><br><input type='checkbox' id='29.5' name='29.5' value='29.5'><label for='29.5'> 29.5</label><br>"
+        }
+        if(equipement == "shirts"){
+            document.getElementById("filterContainer").innerHTML += "<h4>Size</h4><input type='checkbox' id='S' name='S' value='S'><label for='S'> Small</label><br><input type='checkbox' id='M' name='M' value='M'><label for='M'> Medium</label><br><input type='checkbox' id='L' name='L' value='L'><label for='L'> Large</label>"
+        }    
+        
     }
 }
