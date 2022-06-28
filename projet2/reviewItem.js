@@ -19,3 +19,4 @@ function onload() {
     document.getElementById("itemLink").innerHTML = itemName;
     document.getElementById("itemLink").href = window.location;
 }
+
