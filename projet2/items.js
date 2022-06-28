@@ -62,6 +62,6 @@ function filters(){
 
 function cards(){
     for (let i = 0; i <20 ; i++){
-        document.getElementById("itemContainer").innerHTML += "<div class='p-2 col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-7 col-xs-12'><div data-item-name='Item '"+i+" data-item-price='35' class='card' style='width:200px'><img class='card-img-top' src='placeHolder.jpg' alt='Card image'><div class='card-body'><h4 class='card-title'>Item "+i+"</h4><p class='card-text'>$35.00</p><a href='#' class='btn btn-primary'>Buy</a></div></div></div>"
+        document.getElementById("itemContainer").innerHTML += "<div class='p-2 col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-7 col-xs-12'><div data-item-id="+i+" data-item-name='Item '"+i+" data-item-price='35' class='card' style='width:200px'><img class='card-img-top' src='placeHolder.jpg' alt='Card image'><div class='card-body text-center'><h4 class='card-title'>Item "+i+"</h4><p class='card-text'>$35.00</p><a href='#' class='btn btn-primary'>Buy</a></div></div></div>"
     }
 }
