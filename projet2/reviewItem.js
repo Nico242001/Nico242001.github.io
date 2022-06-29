@@ -58,8 +58,9 @@ function addToCart(){
     console.log(item);
     // var newList = localStorage.getItem("cartItems");
     // sessionStorage.length
-    sessionStorage.setItem(sessionStorage.length, item);
-
+    sessionStorage.setItem(sessionStorage.length, JSON.stringify(item));
+    var session = sessionStorage.getItem(sessionStorage.length-1).name
+    console.log(session);
 }
 
 function test(){
