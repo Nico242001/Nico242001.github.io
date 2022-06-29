@@ -54,7 +54,8 @@ function addToCart(){
     var itemAmount = document.getElementById("itemAmount").value;
     var itemSize = document.getElementById("itemSize").value;
     var item = {id:itemID, name:itemName, image:imageLink, price:itemPrice, amount:itemAmount, size:itemSize}
-    var newList = JSON.parse(localStorage.getItem("cartItems")).push(item);
+    var newList = JSON.parse(localStorage.getItem("cartItems"));
+    newList.push(item);
     localStorage.setItem("cartItems", JSON.stringify("newList"));
 }
 
