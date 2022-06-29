@@ -1,7 +1,7 @@
 var sport;
 var equipement;
 var itemID;
-var item = "Item"
+var itemName;
 var link = "https://nico242001.github.io/projet2/"
 var imageLink;
 var price;
@@ -13,6 +13,7 @@ function onload() {
     itemID = params.get("itemName");
     imageLink = params.get("imageLink");
     price = params.get("price");
+    itemName = params.get("itemName");
     if(equipement == "shinGuards"){
         equipement = "shin guards"
     }
@@ -28,8 +29,9 @@ function onload() {
     document.getElementById("price").innerHTML = price;
     document.getElementById("equipementLink").innerHTML = equipement;
     document.getElementById("equipementLink").href = equipementLink;
-    document.getElementById("itemLink").innerHTML = item.concat(" ",itemID);
+    document.getElementById("itemLink").innerHTML = itemName;
     document.getElementById("itemLink").href = window.location;
+    document.getElementById("itemNameHeader").innerHTML = itemName;
     size();
 }
 
