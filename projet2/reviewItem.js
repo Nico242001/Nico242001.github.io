@@ -59,7 +59,7 @@ function addToCart(){
     // var newList = localStorage.getItem("cartItems");
     // sessionStorage.length
     sessionStorage.setItem(sessionStorage.length, JSON.stringify(item));
-    var session = sessionStorage.getItem(sessionStorage.length-1).name
+    var session = JSON.parse(sessionStorage.getItem(sessionStorage.length-1)).name
     console.log(session);
 }
 
