@@ -2,6 +2,7 @@ var sport;
 var equipement;
 var link = "https://nico242001.github.io/projet2/"
 var price;
+var list = [];
 
 
 function onload() {

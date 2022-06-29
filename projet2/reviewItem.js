@@ -4,7 +4,8 @@ var itemID;
 var itemName;
 var link = "https://nico242001.github.io/projet2/"
 var imageLink;
-var price;
+var itemPrice;
+var cartItems=[];
 
 function onload() {
     const params = new URLSearchParams(window.location.search);
@@ -12,7 +13,7 @@ function onload() {
     equipement = params.get("equipement");
     itemID = params.get("itemName");
     imageLink = params.get("imageLink");
-    price = params.get("price");
+    itemPrice = params.get("price");
     itemName = params.get("itemName");
     if(equipement == "shinGuards"){
         equipement = "shin guards"
@@ -26,7 +27,7 @@ function onload() {
         document.getElementById("sportLink").href = link.concat(sport);
         document.getElementById("sportLink").innerHTML = sport;
     }
-    document.getElementById("price").innerHTML = price;
+    document.getElementById("price").innerHTML = itemPrice;
     document.getElementById("equipementLink").innerHTML = equipement;
     document.getElementById("equipementLink").href = equipementLink;
     document.getElementById("itemLink").innerHTML = itemName;
@@ -45,4 +46,15 @@ function size(){
     } else{
         document.getElementById("itemSize").innerHTML = "<option value='27.5'>27.5</option><option value='28.5'>28.5</option><option value='29.5'>29.5</option>";
     }
+}
+
+function addToCart(){
+    var itemAmount = document.getElementById("itemAmount").value;
+    var itemSize = document.getElementById("itemSize").value;
+    var item = {id:itemID, name:itemName, image:imageLink, price:itemPrice, amount:itemAmount, size:itemSize}
+    cartItems.push(item);
+}
+
+function test(){
+    console.log(cartItems);
 }
