@@ -15,8 +15,12 @@ function onload() {
     }
     var result = sport.concat(" ", equipement);
     document.getElementById("sportNameEquipement").innerHTML = result;
-    document.getElementById("sportLink").innerHTML = sport;
     document.getElementById("sportLink").href = link.concat(sport);
+    if(sport == "basket"){
+        document.getElementById("sportLink").innerHTML = "basketball";
+    } else{
+        document.getElementById("sportLink").innerHTML = sport;
+    }
     document.getElementById("equipementLink").innerHTML = equipement;
     document.getElementById("equipementLink").href = window.location;
     
