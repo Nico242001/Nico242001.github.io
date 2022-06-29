@@ -5,6 +5,7 @@ var itemName;
 var link = "https://nico242001.github.io/projet2/"
 var imageLink;
 var itemPrice;
+sessionStorage.setItem(0,0);
 // var cartItems=[];
 // sessionStorage.setItem("cartItems", cartItems.toString);
 // localStorage.setItem("cartItems",JSON.stringify(cartItems));
@@ -55,14 +56,17 @@ function addToCart(){
     var itemAmount = document.getElementById("itemAmount").value;
     var itemSize = document.getElementById("itemSize").value;
     var item = {id:itemID, name:itemName, image:imageLink, price:itemPrice, amount:itemAmount, size:itemSize}
-    console.log(item);
-    // var newList = localStorage.getItem("cartItems");
-    // sessionStorage.length
-    sessionStorage.setItem(sessionStorage.length, JSON.stringify(item));
-    var session = JSON.parse(sessionStorage.getItem(sessionStorage.length-1)).name
-    console.log(session);
+    var amount = sessionStorage.getItem(0);
+    amount = amount + 1;
+    sessionStorage.setItem(0, amount);
+    sessionStorage.setItem(sessionStorage.getItem(0), JSON.stringify(item));
 }
 
-function test(){
-    console.log(JSON.parse(localStorage.getItem("cartItems")));
+function cartItems(){
+    let keys = Object.keys(sessionStorage);
+    for(let key of keys){
+        if(key != 0){
+            console.log(JSON.parse(sessionStorage.getItem(key)));
+        }
+    }
 }
