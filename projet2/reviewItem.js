@@ -68,7 +68,7 @@ function cartItems(){
             var itemInfo =JSON.parse(sessionStorage.getItem(key));
             var total = itemInfo.price * itemInfo.amount;
             totalPrice = totalPrice + total;
-            document.getElementById("cartItems").appendChild =  "<div class='row mx-auto border border-3 border-dark bg-light'><div class='col-12'><div class='row mx-auto p-0'><div class='col-2 text-center'><img src='"+itemInfo.image+"'</div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.itemName+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.size+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.price+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.amount+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+total+"</h4></div></div></div></div>";
+            document.getElementById("cartItems").innerHTML= document.getElementById("cartItems").innerHTML+ "<div class='row mx-auto border border-3 border-dark bg-light'><div class='col-12'><div class='row mx-auto p-0'><div class='col-2 text-center'><img src='"+itemInfo.image+"'</div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.itemName+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.size+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.price+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.amount+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+total+"</h4></div></div></div></div>";
         }
     }
     document.getElementById("totalPrice").innerHTML = "$"+totalPrice;
