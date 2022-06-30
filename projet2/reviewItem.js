@@ -40,11 +40,10 @@ function onload() {
         document.getElementById("equipementLink").href = equipementLink;
     }
     document.getElementById("image").src = imageLink;
-    
-        document.getElementById("price").innerHTML = itemPrice;
+    document.getElementById("price").innerHTML = itemPrice;
     document.getElementById("itemLink").innerHTML = itemName;
-        document.getElementById("itemLink").href = window.location;
-        document.getElementById("itemNameHeader").innerHTML = itemName;
+    document.getElementById("itemLink").href = window.location;
+    document.getElementById("itemNameHeader").innerHTML = itemName;
    
     size();
 }
