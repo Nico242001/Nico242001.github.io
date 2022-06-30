@@ -29,6 +29,7 @@ function onload() {
     
 }
 
+
 function filters(){
     if(sport == "soccer"){
         document.getElementById("filterContainer").innerHTML += "<h4>Brand</h4><input type='checkbox' id='nike' name='nike' value='nike'><label for='nike'> Nike</label><br><input type='checkbox' id='adidas' name='adidas' value='adidas'><label for='adidas'> Adidas</label><br><input type='checkbox' id='puma' name='puma' value='puma'><label for='puma'> Puma</label><br><br>"

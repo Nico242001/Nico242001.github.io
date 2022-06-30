@@ -11,30 +11,41 @@ var totalPrice;
 
 function onload() {
     const params = new URLSearchParams(window.location.search);
-    sport = params.get("sport");
-    equipement = params.get("equipement");
-    itemID = params.get("itemName");
-    imageLink = params.get("imageLink");
-    itemPrice = params.get("price");
-    itemName = params.get("itemName");
-    if(equipement == "shinGuards"){
-        equipement = "shin guards"
+        sport = params.get("sport");
+        equipement = params.get("equipement");
+        itemID = params.get("itemName");
+        imageLink = params.get("imageLink");
+        itemPrice = params.get("price");
+        itemName = params.get("itemName");
+        if(equipement == "shinGuards"){
+            equipement = "shin guards"
+        }
+    if(window.location.href.indexOf("deals") != -1)
+    {
+        document.getElementById("sportLink").href = "https://nico242001.github.io/projet2/deals";
+        document.getElementById("sportLink").innerHTML = "deals";
+        document.getElementById("equipementLink").innerHTML ="";
+        document.getElementById("space").innerHTML = "";
+    }else{
+        
+        var equipementLink = link.concat("items?sport=",sport,"&equipement=",equipement);
+        if(sport == "basketball"){
+            document.getElementById("sportLink").href = link.concat("basket");
+            document.getElementById("sportLink").innerHTML = "basketball";
+        } else{
+            document.getElementById("sportLink").href = link.concat(sport);
+            document.getElementById("sportLink").innerHTML = sport;
+        }
+        document.getElementById("equipementLink").innerHTML = equipement;
+        document.getElementById("equipementLink").href = equipementLink;
     }
-    var equipementLink = link.concat("items?sport=",sport,"&equipement=",equipement);
     document.getElementById("image").src = imageLink;
-    if(sport == "basketball"){
-        document.getElementById("sportLink").href = link.concat("basket");
-        document.getElementById("sportLink").innerHTML = "basketball";
-    } else{
-        document.getElementById("sportLink").href = link.concat(sport);
-        document.getElementById("sportLink").innerHTML = sport;
-    }
-    document.getElementById("price").innerHTML = itemPrice;
-    document.getElementById("equipementLink").innerHTML = equipement;
-    document.getElementById("equipementLink").href = equipementLink;
+    
+        document.getElementById("price").innerHTML = itemPrice;
     document.getElementById("itemLink").innerHTML = itemName;
-    document.getElementById("itemLink").href = window.location;
-    document.getElementById("itemNameHeader").innerHTML = itemName;
+        document.getElementById("itemLink").href = window.location;
+        document.getElementById("itemNameHeader").innerHTML = itemName;
+   
     size();
 }
 
@@ -68,7 +79,7 @@ function cartItems(){
             var itemInfo =JSON.parse(sessionStorage.getItem(key));
             var total = itemInfo.price * itemInfo.amount;
             totalPrice = totalPrice + total;
-            document.getElementById("cartItems").innerHTML= document.getElementById("cartItems").innerHTML+ "<div class='row mt-3 mx-auto border border-3 border-dark bg-light'><div class='col-12'><div class='row mx-auto p-0'><div class='col-2 text-center'><img src='"+itemInfo.image+"' style='width:100%;height:50px;object-fit:contain;'></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.itemName+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.size+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.price+"</h4></div><div class='col-1 text-center'><h4 class='mx-auto'>"+itemInfo.amount+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+total+"</h4></div><div class='col-1 text-center'><button type='button' onclick='delet("+key+")'>X<button></div></div></div></div>";
+            document.getElementById("cartItems").innerHTML= document.getElementById("cartItems").innerHTML+ "<div class='row mt-3 mx-auto border border-3 border-dark bg-light'><div class='col-12'><div class='row mx-auto p-0'><div class='col-2 text-center'><img src='"+itemInfo.image+"' style='width:100%;height:50px;object-fit:contain;'></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.itemName+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.size+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+itemInfo.price+"</h4></div><div class='col-1 text-center'><h4 class='mx-auto'>"+itemInfo.amount+"</h4></div><div class='col-2 text-center'><h4 class='mx-auto'>"+total+"</h4></div><div class='col-1 text-center'><button type='button' onclick='delet("+key+")'>X</button></div></div></div></div>";
         }
     }
     document.getElementById("totalPrice").innerHTML = "$"+totalPrice;
