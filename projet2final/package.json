@@ -2,7 +2,7 @@
   "name": "projet2final",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nico242001.github.io/projet2final/projet2final",
+  "homepage": "https://nico242001.github.io/projet2final",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
