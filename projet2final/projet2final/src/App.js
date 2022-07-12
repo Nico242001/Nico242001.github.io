@@ -18,9 +18,9 @@ function App() {
           <Route exact path="/shop">
             <Shop/>
           </Route>
-          <Route exact path="/sport/:sport">
+          {/* <Route exact path="/sport/:sport">
             <Sport/>
-          </Route>
+          </Route> */}
         </Switch>
       </div>
     </div>

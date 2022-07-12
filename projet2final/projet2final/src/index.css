@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-/* .App{
-  background-color: #8860D0;
-} */
+html, #root, body{
+  height: 100%;
+}
+
+.App{
+  height: 100%;
+  background-color: #f8f9fa;
+}
 .navbar-react {
   overflow: hidden;
   background-color: #5680E9;
@@ -33,7 +38,7 @@
 }
 
 .dropdown-react:hover .dropbtn-react, .links-react a:hover {
-  background-color: #5AB9EA;
+  background-color: #212529;
 }
 
 .dropdown-content-react {
@@ -82,29 +87,71 @@
 }
 
 .fit{
-  max-width: fit;
+  max-width: fit-content;
 }
 
-
-.item1 {
+/* .item1 {
   border-top: 1px solid #dfdfdf;
   text-align: center;
   grid-column: 4 / 3;
 }
 .item2{
   grid-column: 12/1;
-}
+} */
 .header{
   margin-bottom: 5px;
   margin-top: 5px;
 }
-.deals{
+/* .deals{
   width: 300px;
   height: 215px;
-}
-.deals-img{
+} */
+/* .deals-img{
   width: 80px;
-}
+} */
 .line{
   text-decoration: line-through;
+}
+.widthFull{
+  min-width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+.padding{
+  padding: 0;
+}
+.card-width{
+  width: 200px;
+}
+.img{
+  width: 100%;
+  height: 175px;
+}
+
+@media only screen and (max-width: 800px) {
+  .height{
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width:800px) and (max-width: 1000px) {
+  .height{
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width:1000px) and (max-width: 1200px) {
+  .height{
+    height: 450px;
+  }
+}
+@media only screen and (min-width:1200px) and (max-width: 1500px) {
+  .height{
+    height: 475px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .height{
+    height: 525px;
+  }
 }
